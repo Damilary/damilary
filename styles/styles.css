@@ -23,7 +23,7 @@
   --background-image: url(https://images.unsplash.com/photo-1491895200222-0fc4a4c35e18?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80);
 
 
-  --transition: ease-out 0.8s;
+  --transition: all ease-out 0.8s;
   --transition-2: all ease-in-out 0.8s;
   --box-shadow: -3px -3px 7px #ffffff73, 2px 2px 5px rgba(94, 104, 121, 0.288);
 
@@ -114,8 +114,14 @@ header {
   color: var(--text-color);
 }
 
+.skills, .services, .portfolio, .about, .contact,
+.skills h2, .services h2, .portfolio h2, .about h2, .contact h2 {
+  padding-top: 3%;
+}
 
-
+.skills, .services, .portfolio, .about, .contact {
+  transition: var(--transition-2);
+}
 /* ========================== home section ================== */
 .home {
   position: relative;
@@ -199,12 +205,6 @@ header {
 }
 
 /* ======================= Skills ================== */
-
-.skills {
-  padding-top: 3%;
-  transition: var(--transition-2);
-}
-
 .skills-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -218,10 +218,6 @@ header {
   padding-left: 4rem;
   object-position: center;
   cursor: grab;
-}
-
-.skills h2 {
-  padding-top: 3%;
 }
 
 .bars-box {
@@ -281,7 +277,6 @@ header {
   justify-content: center;
   gap: 1rem;
   margin-top: 2rem;
-  transition: var(--transition-2);
 }
 
 .services-box {
@@ -375,10 +370,6 @@ header {
   color: rgb(2, 166, 70);
 }
 
-.about {
-  padding-top: 3%;
-}
-
 .about-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -391,10 +382,6 @@ header {
   border-radius: 0.5rem;
   box-shadow: 0px 10px 60px rgb(199, 198, 198);
   cursor: grab;
-}
-
-.about h2 {
-  padding-top: 3%;
 }
 
 .about-text p {
